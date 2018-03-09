@@ -1,0 +1,86 @@
+.menu{
+  background: black;
+}
+
+.btn{
+  border-radius: 0;
+}
+.btn-view-channel{
+  display: flex;
+  list-style: none;
+  background: white;
+  margin-left: 2em;
+}
+
+.btn-channel{
+  margin-left: 0;
+}
+
+h3{
+  color: white;
+  /*font-weight: 600;*/
+}
+
+.channel-item{
+  height: 80px;
+  border-radius: 2%;
+}
+
+.card-header img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.live{
+  border-radius: 50%;
+  background: green;
+  height: 10px;
+  width: 10px;
+}
+
+.dead{
+  display: none;
+}
+
+.card{
+  flex-direction: row;
+}
+
+.channel-link{
+  color: black;
+  font-family: sans-serif;
+}
+
+
+
+@media only screen and (max-width: 480px){
+ .card-header{
+    padding-left: 0 !important;
+    width: 60px;
+  }
+  .channel-name h2{
+    font-size: 18px;
+    margin-left: 0;
+  }
+  .content{
+    .content{
+    display: flex;
+    flex-basis: 10em;
+  }
+  }
+  .card{
+    width: 100%;
+    padding-left: 0;
+  }
+  .stream{
+    display: none;
+  }
+  .row{
+    flex-direction: column-reverse;
+  }
+
+  .game p{
+    font-size: 15px;
+  }
+}
